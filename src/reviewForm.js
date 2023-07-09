@@ -52,7 +52,6 @@ return(
     <input placeholder="enter user name" onChange={handleUser}/>
     <textarea onChange={handleChange} type='text'
      placeholder="type review"/>
-     <br/>
     </div>
     <button   className="btn btn-primary"  
     value="">Submit</button>
