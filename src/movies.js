@@ -31,19 +31,15 @@ return(<div className="container">
   <div id='card' className="card justify-content-center row "> 
 
  {movieList.map((movies,id)=> 
-  
   <div key={id} className="  bg-secondary align-items-center m-2 d-inline col-3 ">
       {movies.title}  
       
        <br/><img src={movies.photo}/>
         <br/>
-        <Show/><br/>  <Star/> 
-        <Like lik={movies.likes}/>
+        <Show/><br/>  <Star/> <br/> 
+        <Like />
              
-    <button key={movies.id} onClick={handleClick} className="btn btn-success" value={movie.likes} 
-    >👍{movies.likes}</button> 
-    <button className="btn btn-danger" value={movie.likes}>
-      👎{movies.disLike}</button>
+    
 <br/>
       {movies.year}<br/> 
    Director BY :  {movies.director}
