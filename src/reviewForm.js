@@ -61,7 +61,6 @@ return(
         {reviewList.map(x=> {
             return (<li key={x.id}>
       <button className="btn" onClick={clickMe}> <p>{show? x.content :'...'} </p> </button>
-       <br/>
      <p> User:{x.user}</p>
     </li>
     )

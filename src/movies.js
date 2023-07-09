@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import Star from './stars'
 import Zorro from './lovebirds.JPG'
 import ReviewForm from "./reviewForm"
@@ -31,18 +31,19 @@ return(<div className="container">
   <div id='card' className="card justify-content-center row "> 
 
  {movieList.map((movies,id)=> 
-  <div key={id} className="  bg-secondary align-items-center m-2 d-inline col-3 ">
+  <div key={id} className="  bg-secondary  m-2 d-inline col-3 ">
       {movies.title}  
       
        <br/><img src={movies.photo}/>
-        <br/>
-        <Show/><br/>  <Star/> <br/> 
-        <Like />
-             
+       <div className="reviewSection ">
+        <Show/>  
+        <Star/>
+        <Like name={movies.title} key={movies.id}/>
+    </div>         
     
-<br/>
-      {movies.year}<br/> 
-   Director BY :  {movies.director}
+
+  <p id="p">    {movies.year}<br/> 
+   Director  :  {movies.director}</p>
 
 </div>
   )}

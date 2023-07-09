@@ -13,7 +13,7 @@ function Show (){
         <div>
             <br/>
             {show? <ReviewForm />: null}
-            <button className="btn btn-warning mt-4" onClick={click}>Leave Review</button>
+            <button className="btn btn-warning mt-0" onClick={click}>Leave Review</button>
         </div>
     )
 }

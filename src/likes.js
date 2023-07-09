@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState} from "react"
+// import { useLocalStorage } from "@uidotdev/usehooks";
 
 export default function Like (){
    const [likes, setLikes]= useState(0)
@@ -14,3 +15,4 @@ export default function Like (){
    )
 
 }
+
